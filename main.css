@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root  {
+    --defaultColor: rgb(46, 46, 150);
+    --defaultFontFamily: 'Lato', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* navbar */
+
+.navbar {
+    background-color: var(--defaultColor);
+    width: 100%;
+}
+
+.navbar .container {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 45px;
+}
+
+.navbar p {
+    font-family: var(--defaultFontFamily);
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar nav ul {
+    /* display: flex; */
+    list-style: none;
+    flex-direction: row;
+    color: white;
+}
+
+.navbar nav ul li {
+    font-family: var(--defaultFontFamily);
+    font-size: 18px;
+    padding: 10px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.navbar nav ul li a:hover {
+    color: orangered;
+    transition: .3s;
+}
+
+/* showcase */
+
+.showcase .container {
+    max-width: 1120px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.showcase img {
+    position: relative;
+    max-width: 1120px;
+    margin: 0 auto;
+    filter: brightness(50%);
+}
+
+.showcase h1 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 40px;
+    color: white;
+    font-family: var(--defaultFontFamily);
+    z-index: 1;
+}
+
+.showcase h2 {
+    position: absolute;
+    top: 48%;
+    left: 40%;
+    font-size: 26px;
+    color: whitesmoke;
+    font-family: var(--defaultFontFamily);
+    z-index: 1;
+}
+
+.showcase p {
+    bottom: 30%;
+    left: 45%;
+    color: white;
+    position: absolute;
+    font-family: var(--defaultFontFamily);
+    font-size: 24px;
+    padding: 10px 14px;
+    border: 3px solid orangered;
+    z-index: 1;
+}
+
+/* media */
